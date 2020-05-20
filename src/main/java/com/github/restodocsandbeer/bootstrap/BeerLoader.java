@@ -3,9 +3,11 @@ package com.github.restodocsandbeer.bootstrap;
 import com.github.restodocsandbeer.domain.Beer;
 import com.github.restodocsandbeer.repositories.BeerRepository;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
+@Component
 public class BeerLoader implements CommandLineRunner {
 
     private final BeerRepository beerRepository;
