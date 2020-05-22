@@ -40,7 +40,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 
 @ExtendWith(RestDocumentationExtension.class)
-@AutoConfigureRestDocs
+@AutoConfigureRestDocs(uriScheme = "https", uriHost = "localhost", uriPort = 8081)
 @WebMvcTest(BeerController.class)
 @ComponentScan(basePackages = "com.github.restodocsandbeer.web.mappers")
 class BeerControllerTest {
